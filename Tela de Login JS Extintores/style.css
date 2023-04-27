@@ -1,0 +1,148 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+body{
+	margin: 0;
+	font-family: 'Righteous', cursive;
+}
+body *{
+	box-sizing: border-box;
+}
+.main-login{
+	width: 100vw;
+	height: 100vh;
+	background:#FFD700;/*Cor de fundo da tela inicial*/
+	display: flex;
+	justify-content: center;
+	align-items: center ;
+
+}
+.login-img{
+	width: 50vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center ;
+	flex-direction: column ;
+}
+.login-img >h1{
+	color: #0a0a08 ;
+	font-size: 3vw;
+}
+.login-imagem{
+	width: 35vw;
+
+}
+.txt2{
+	font-size: 1vw;
+	color: #00008B;/*Cor do label faça login*/
+	cursor:pointer;
+	text-decoration: none;
+
+}
+.txt2:hover{
+	color: darkred;
+	 text-decoration: underline;
+}
+
+.login-cadast{
+	width: 50vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center ;
+}
+.Card-login{
+	width: 60%;
+	display: flex;
+	justify-content: center;
+	align-items: center ;
+	flex-direction: column;
+	padding: 30px 35px;
+	background:#363636;
+	border-radius: 20px;
+	box-shadow: 0px 10px 40px #363636;
+}
+.Card-login >h1{
+	color:#FFB90F ;
+	font-weight: 800;
+	margin: 0;
+}
+.textfield{
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	margin:10px 0px ;
+} 
+.textfield > input{
+	width: 100%;
+	border: none;
+	border-radius: 10px;
+	padding: 15px;
+	background: #696969 ;
+	color: #FFC125;
+	font-size: 12pt;
+	box-shadow: 0px 10px 40px #363636;
+	box-sizing: border-box;
+}
+.textfield >label{
+	color: #F0FFFF;
+	margin-bottom: 10px;
+}
+.textfield >input::placeholder{
+ color: #DAA520;
+}
+.btn-login{
+	width: 50%;
+	padding: 16px 0px;
+	margin: 20px;
+	border:none;
+	border-radius: 10px;
+	outline: none;
+	text-transform: uppercase;
+	font-weight: 800;
+	letter-spacing: 3px;
+	color: black;
+	background:#FFD700 ;
+	cursor:pointer;
+	box-shadow: 0px 10px 40px -12px #FFC125;
+}
+@media only screen and (max-width: 950px){
+	.Card-login{
+		width: 85%;
+	}
+
+}
+@media only screen and (max-width: 600px){
+	.main-login{
+		flex-direction: column;
+	}
+	.login-img >h1{
+		display:none;
+	}
+	.login-img{
+		width: 100%;
+		height: auto;
+	}
+	.login-cadast{
+	width: 100%;
+		height: auto;	
+	}
+	.login-imagem{
+		width: 40vh;
+	}
+	.Card-login{
+		width: 90%;
+	}
+}
+.rodapé {
+  background-color: #FFD700;
+   position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+   padding: 50px;
+   text-align:right;"
+}
